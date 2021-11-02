@@ -8,10 +8,11 @@ const ingredients = [
 ];
 const ingredientsEl = document.querySelector("ul");
 console.log(ingredientsEl)
-const element = ingredients.map((ingredient) => {
+const elements = ingredients.map(ingredient => {
 const ingredientsElem = document.createElement("li");
-//ingredientsElem.textContent = ingredient;
-//ingredientsElem.classList.add("item");
-return console.log(ingredientsElem) } );
-console.log(element)
-ingredientsEl.append(...element)
+ingredientsElem.textContent = ingredient;
+ingredientsElem.classList.add("item");
+  return ingredientsElem;
+});
+console.log(elements)
+ingredientsEl.append(...elements)
